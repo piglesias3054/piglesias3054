@@ -1,0 +1,190 @@
+/* Reset browser styles */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+  display: block
+
+body
+  line-height: 1
+
+ol, ul
+  list-style: none
+
+blockquote, q
+  quotes: none
+
+blockquote
+  &:before, &:after
+    content: ''
+    content: none
+
+q
+  &:before, &:after
+    content: ''
+    content: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+
+/* End Reset browser styles */
+
+/* Custom styles */
+html, body
+    height: 100%
+
+
+
+#clock
+  display: flex
+  align-items: center
+  height: 100%
+  
+.analog
+  width: 13rem
+  height: 13rem
+  display: flex
+  justify-content: center
+  align-self: center
+  align-items: center
+  background: url(../gif/clock.png)
+  background-size: cover
+  margin-top: 2rem
+
+.analog:before
+  content: ''
+  position: absolute
+  width: 8px
+  height: 8px
+  background: #fff
+  border-radius: 50%
+  z-index: 10000
+
+.analog .hour, .analog .min, .analog .sec
+  position: absolute
+
+.hour, .hr
+  width: 5rem
+  height: 5rem
+
+.min, .mn
+  width: 7rem
+  height: 7rem
+
+.sec, .sc
+  width: 8rem
+  height: 8rem
+
+.hr, .mn, .sc
+  display: flex
+  justify-content: center
+  position: absolute
+  border-radius: 50%
+
+.hr:before
+  content: ''
+  position: absolute
+  width: 4px
+  height: 2.5rem
+  background: #ffcd60
+  z-index: 10
+  border-radius: 6px 6px 0 0
+
+.mn:before
+  content: ''
+  position: absolute
+  width: 3px
+  height: 3.5rem
+  background: #ffffff
+  z-index: 9
+  border-radius: 6px 6px 0 0
+
+.sc:before
+  content: ''
+  position: absolute
+  width: 1px
+  height: 4rem
+  background: #ffffff
+  z-index: 8
+  border-radius: 6px 6px 0 0
+
+
+
+#time
+    height: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    font-family: Courier New, Courier, monospace
+    font-size: 3rem
+    z-index: 1
+
+.clockData
+  z-index: 1
+  display: flex
+  justify-content: center
+  margin-left: auto
+  margin-right: auto
+  margin-top: -7rem
+  flex-direction: column
+  color: white
+
+.today
+  display: flex
+  margin-bottom: 1rem
+  margin-left: auto
+  margin-right: auto
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+  font-size: 1.5rem
+  font-weight: 200
+
+.background
+  height: 100%
+  width: 100%
+  display: flex
+  justify-content: center
+  margin: 0
+  position: absolute
+  z-index: -1
+
+
+.background .daytime
+  display: none
+
+
+.background .evening
+  display: none
+  z-index: -2
+  opacity: .5
+  background-color: #c51c1c
+  
+
+
+.background .nightime
+  display: none
+  z-index: -3
+  opacity: .5
+  background-color: #240000
+
+
+
+
+
+
+.background img
+  max-height: 80%
+  opacity: 0.9
+ 
+
+
+
+
